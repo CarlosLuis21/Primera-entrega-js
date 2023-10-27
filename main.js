@@ -3,7 +3,7 @@ let opcion1 = "Gold"
 let opcion2 = "Golf"
 let opcion3 = "Polo"
 
-let nombre = prompt("Ingresa tu nombre");
+/*let nombre = prompt("Ingresa tu nombre");
 
 if (nombre == null || nombre == "") {
     do {
@@ -105,3 +105,4 @@ alert("Precio final es $21.600.000");
 } else {
     alert("Selección de cuotas no válida");
 }
+*/
