@@ -3,6 +3,36 @@ let opcion1 = "Gold"
 let opcion2 = "Golf"
 let opcion3 = "Polo"
 
+// Acceder a los elementos del DOM
+const form = document.querySelector('form');
+const nombreInput = document.getElementById('nombre');
+const apellidoInput = document.getElementById('apellido');
+const emailInput = document.getElementById('email');
+const autosSelect = document.getElementById('autos');
+const cuotasSelect = document.getElementById('cuotas');
+
+// Escuchar el envío del formulario
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el envío por defecto del formulario
+
+    // Obtener los valores seleccionados o ingresados por el usuario
+    const nombre = nombreInput.value;
+    const apellido = apellidoInput.value;
+    const email = emailInput.value;
+    const autoSeleccionado = autosSelect.value;
+    const cuotasSeleccionadas = cuotasSelect.value;
+
+    // Mostrar por consola las opciones elegidas por el usuario
+    console.log('Nombre:', nombre);
+    console.log('Apellido:', apellido);
+    console.log('Correo electrónico:', email);
+    console.log('Auto seleccionado:', autoSeleccionado);
+    console.log('Cuotas seleccionadas:', cuotasSeleccionadas);
+
+    
+});
+
+
 /*let nombre = prompt("Ingresa tu nombre");
 
 if (nombre == null || nombre == "") {
